@@ -2,39 +2,40 @@
 
 FAW Game is Paper, Scissors and Rocks Game, with a twist. This games serves as a nice break to get your mind on something else when you stuck coding or just for laughs when you're boored.  
 
-For example, Love Maths is a site that hopes to demonstrate how pure JavaScript works in a real-world context. The site will be targeted toward people who not only love to implement more advanced JavaScript concepts but also maths. Love Maths is a fully responsive JavaScript maths game that will allow users to add, subtract, multiply and divide numbers. 
+While the this is being a learning experience I tried to keep things as simpel as possible, not invent the wheel twice and make things more complicated than it has to be. Thats the beauty with javascript that you can build amzing ting with simplistic lines of code. And I hope it come across in the FAW Game project.
 
 ![Responsice Mockup](media/love_maths_mockup.png)
 
+## Planning
+
+fisrt things fisrt. 
+
+The wireframe used for the project were a very helpful resource
+
+![Wireframe](media/love_maths_mockup.png)
+
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-### Existing Features
 
-- __The Love Maths Logo and Heading__
+- __The FAW Game Selections Area__
 
-  - Featured at the top of the page, the Love Maths logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
+  - Featured on top of the page and mmost notable for the user is the selections icons, which is actually buttons in form of emojis. If you is familiar with paper, rock and scissors you it is easy understandable. If the user is not familiar with the addtion of the spock and lizards emojis there is a link just placed above. It opens in a seperate tab, and the font-color is nit affected by visiting the rules page, for aesthetic reasons. 
 
-![Logo](media/love_maths_logo.png)
+  The beige background color is neutral and provides a good contrast for the elemnts displayd on the game page. 
 
-- __The Game Area__
+![Logo](assets/images/gamearea.png)
 
-  - This section will allow the user to play the maths game. The user will be able to easily see icons for addition,  subtraction, multiplication, and division games.
-  - The user will be able to select the type of maths game they will be playing by clicking on the different icons. 
+- __The Results Area__
+
+  - This section will allow the user to keep track of the score by viewing the past selection being renderd with a function that creates new divs wich is stacked in a column. To make it even more clear to the user the winner emoji is bieng enlarged and the loosers emoji is being darkend down with a lower opacity.
 
 ![Game](media/love_maths_icons.png)
 
-- __The Question section__
+- __The Scores Area__
 
-  - The question section is where the user will be able to see the elementary arithmetic question to answer as part of the game. The user will be able answer the questions in the answer box provide
-  - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly. 
+  - The scores area is just a span and a function that increment the scores by one and print it out in the document with the innerText method. I also included a emoji that represent the user and the comuter. The player emoji is choossen with conideration of geder neutrality and inclusion.
 
-![Question](media/love_maths_question.png)
-
-- __The Score Area__
-
-  - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
 
 ![score](media/love_maths_answer.png)
 
@@ -44,7 +45,8 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ### Features Left to Implement
 
-- Another feature idea
+- Sound effects
+- Text bubbles
 
 ## Testing 
 
@@ -89,25 +91,32 @@ The live link can be found here - https://code-institute-org.github.io/love-math
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
+Credits be where credits due...
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+When I started out I hade my wireframe to go by when scrolling youtube for inspiration. I came across Kyle's channel 
+"Web Devs Simplyfied"
+[Specific YouTube Tutorial](https://youtu.be/1yS-JV4fWqY)
+
+His game design pretty much matched my wireframe and the way he made the result render on the screen. I aslo liked how his code looked.
+
+the fonts is from google fonts:
+
+https://fonts.google.com
+
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
+- The photo for game rules comes from: 
 
+https://www.instructables.com/How-to-Play-Rock-Paper-Scissors-Lizard-Spock/
 
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
+- the emojis used in FAW Game are from:
 
-## Other General Project Advice
+https://www.instructables.com/How-to-Play-Rock-Paper-Scissors-Lizard-Spock/
+
+## Other Resources 
 
 Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
 
