@@ -1,0 +1,16 @@
+
+1. create repo
+2. prepare read.me template
+	a. wireframe
+	b. responsive design
+	c. lighthouse
+	d. SEO
+	f. mobile fist
+	g. semantic markup
+	
+3. make wireframes
+4. open test sites
+	a. W3
+	b. jigsaw
+	c. https://ui.dev/amiresponsive
+	d. https://unicode.org/emoji/charts/full-emoji-list.html
