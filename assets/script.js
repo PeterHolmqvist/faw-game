@@ -2,39 +2,34 @@ const selectionButtons = document.querySelectorAll('[data-selection]')
 const finalColumn = document.querySelector('[data-final-column]')
 const computerScoreSpan = document.querySelector('[data-computer-score]')
 const yourScoreSpan = document.querySelector('[data-your-score]')
-const SELECTIONS = [
-    {
-    name: 'fire',
-    emoji: '🔥',
-    beats: 'air' ,
-    beats: 'lizard'
-},
-{
-    name: 'water',
-    emoji: '🌊',
-    beats: 'spock', 
-    beats: 'fire'
-   
-},
-{
-    name: 'air',
-    emoji: '💨',
-    beats:'water', 
-    beats: 'lizard',
-},
-{
+const SELECTIONS = [{
+    name: 'paper', 
+    emoji: '📃',
+    beats: ['spock', 'rock']
+  },
+  {
+    name: 'rock',
+    emoji: '🪨',
+    beats: ['lizard', 'scissors']
+
+  },
+  {
+    name: 'scissors',
+    emoji: '✂',
+    beats: ['paper', 'lizard']
+  },
+  {
     name: 'lizard',
     emoji: '🦎',
-    beats: 'air', 
-    beats: 'spock',
-},
-{
+    beats: ['paper', 'spock']
+  },
+  {
     name: 'spock',
-    emoji: '🧛‍♂️',
-    beats: 'fire', 
-    beats: 'water',
-},
-]
+    emoji: '🖖',
+    beats: ['rock', 'scissors']
+  },
+];
+
 
 /** Function that adds an event listener for clicks on each button and make the selection when clicked */
 selectionButtons.forEach(selectionButton => {
@@ -74,9 +69,15 @@ function addSelectionResult(selection, winner) {
 /** This funtion checks if the oppponent selection beats your selection by returning the 'beats' value with 'name'
  *  value from the keys of the array obejcts. 
   */
-function isWinner(selection, opponentSelection) {
-    return selection.beats === opponentSelection.name
-}
+ function isWinner(selection, opponentSelection) {
+    return selection.beats.includes(opponentSelection.name);
+  }
+  
+  const paper = SELECTIONS[0];
+  const rock = SELECTIONS[1];
+  const scissors = SELECTIONS[2];
+  const lizard = SELECTIONS[3];
+  const spock = SELECTIONS[4];
 
 /**Function that randomizes the computers choice of the objects from the array by multiplying random number  from 
  * 0<1 with the arrays length.  */

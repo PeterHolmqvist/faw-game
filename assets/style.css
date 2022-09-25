@@ -5,6 +5,8 @@ body {
 .selections {
     display: flex;
     justify-content: center;
+    margin: 5%;
+
 }
 
 .selection {
@@ -15,13 +17,33 @@ body {
     transition: 100ms;
     margin-top: 10%;
     margin-bottom: 10%;
-    
-   
 }
 
 .selection:hover {
     transform: scale(1.2);
 }
+
+#rules {
+    font-family:'Cute Font', cursive;
+    font-weight: bold;
+    justify-content: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-items: left;
+    position: absolute;
+    left: - 2%; 
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+a:visited{
+    color:black;
+  }
+
 
 
 .results {
@@ -33,6 +55,7 @@ body {
     align-items: center;
     font-size:  150%;
     font-family: 'Cute Font', cursive;
+    font-weight: bold;
 }
 .result-score {
     margin-left: .5rem ;
@@ -49,5 +72,5 @@ font-size: 200%;
 }
 
 span {
-    
+
 }
