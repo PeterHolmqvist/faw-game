@@ -28,7 +28,7 @@ const SELECTIONS = [{
     emoji: '🖖',
     beats: ['rock', 'scissors']
   },
-];
+]; 
 
 
 /** Function that adds an event listener for clicks on each button and make the selection when clicked */
